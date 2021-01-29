@@ -1,0 +1,124 @@
+{% load static %}
+
+<html>
+{% include "head.html" %}
+<script>document.getElementsByTagName("html")[0].className += " js";</script>
+<style>
+    .card {
+            display: inline-block;
+            padding: 10px;
+            margin-right: 10px;
+            vertical-align: top;
+            }
+    body > div {margin-left: 30px; margin-right: 30px; margin-bottom: 30px;}
+</style>
+
+<body class="p-3">
+
+    <div class="card" style="width: 18rem; height: 28rem;">
+        <img src="http://118.67.133.33:8000/static/assets/img/1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">진미채</h5>
+          <p class="card-text">매콤 달콤 부드러운 진미채 볶음! 초등학생부터 어르신까지 남녀노소 좋아하는 맛!</p>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="2.5">Add To Cart</a>        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; height: 28rem;">
+      <img src="http://118.67.133.33:8000/static/assets/img/2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">미역무침</h5>
+          <p class="card-text">겨울 제철 음식 하면 또 빠질 수 없는 미역! 은근히 솔솔 풍기는 바다향이 매력입니다</p>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="3">Add To Cart</a>        </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; height: 28rem;">
+      <img src="http://118.67.133.33:8000/static/assets/img/3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title">단무지 무침</h5>
+          <p class="card-text">추억의 반찬인 단무지 무침! 짭쪼롭하면서 은근히 매력있는 중독성을 자랑합니다</p>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="2">Add To Cart</a>        </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; height: 28rem;">
+      <img src="http://118.67.133.33:8000/static/assets/img/4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title">멸치볶음</h5>
+          <p class="card-text">집에 밑반찬으로 하나 있으면 든든한 멸치볶음! 인기가 많은 메뉴에요</p>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="3">Add To Cart</a>        </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; height: 28rem;">
+      <img src="http://118.67.133.33:8000/static/assets/img/5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title">콩나물무침</h5>
+          <p class="card-text">아삭아삭 시원한 콩나물 무침! 비빔밥에 넣어먹어도 맛있어요</p>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="2.5">Add To Cart</a>        </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; height: 28rem;">
+      <img src="http://118.67.133.33:8000/static/assets/img/6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title">매운 오뎅</h5>
+          <p class="card-text">매콤하게 볶아낸 오뎅! 감칠맛과 식감이 일품이라 꾸준히 인기있는 반찬이에요</p>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="3">Add To Cart</a>        </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; height: 28rem;">
+      <img src="http://118.67.133.33:8000/static/assets/img/7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title">땅콩 조림</h5>
+          <p class="card-text">고소하고 달콤 짭잘한 땅콩 조림! 어린이도 어른도 같이 즐겨요 남녀노소 좋아해요</p>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="2.5">Add To Cart</a>        </div>
+        </div>
+    </div>
+
+    <div class="card" style="width: 18rem; height: 28rem;">
+      <img src="http://118.67.133.33:8000/static/assets/img/8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+          <h5 class="card-title">시금치 볶음</h5>
+          <p class="card-text">비타민과 마그네슘이 풍부해 건강에 좋은 시금치 볶음! 건강과 맛을 함께 챙겨요</p>
+          <a href="#0" class="cd-add-to-cart js-cd-add-to-cart" data-price="3">Add To Cart</a>        </div>
+        </div>
+    </div>
+    <div class="cd-cart cd-cart--empty js-cd-cart">
+      <a href="#0" class="cd-cart__trigger text-replace">
+        
+        <ul class="cd-cart__count"> <!-- cart items count -->
+          <li>0</li>
+          <li>0</li>
+        </ul> <!-- .cd-cart__count -->
+      </a>
+    
+      <div class="cd-cart__content">
+        <div class="cd-cart__layout">
+          <header class="cd-cart__header">
+            <h2>Cart</h2>
+            <span class="cd-cart__undo">Item removed. <a href="#0">Undo</a></span>
+          </header>
+          
+          <div class="cd-cart__body">
+            <ul>
+              <!-- products added to the cart will be inserted here using JavaScript -->
+            </ul>
+          </div>
+    
+          <footer class="cd-cart__footer">
+            <a href="/purchase" class="cd-cart__checkout">
+              <em>Checkout - $<span>0</span>
+                <svg class="icon icon--sm" viewBox="0 0 24 24"><g fill="none" stroke="currentColor"><line stroke-width="2" stroke-linecap="round" stroke-linejoin="round" x1="3" y1="12" x2="21" y2="12"/><polyline stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="15,6 21,12 15,18 "/></g>
+                </svg>
+              </em>
+            </a>
+          </footer>
+        </div>
+      </div> <!-- .cd-cart__content -->
+    </div> <!-- cd-cart -->
+    <script src="http://118.67.133.33:8000/static/assets/js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+    <script src="http://118.67.133.33:8000/static/assets/js/main.js"></script> 
+</body>
+</html>

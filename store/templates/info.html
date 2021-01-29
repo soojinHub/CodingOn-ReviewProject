@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<style>
+.root_daum_roughmap {text-align: center; margin-left: 40px;display: inline-block;}
+</style>
+<div class="row">
+
+<span id="daumRoughmapContainer1611894908484" class="root_daum_roughmap root_daum_roughmap_landing"></span>
+<span style="width: 650px;" class="float-left">
+    <h4>About Us</h4>
+    <br>
+    <span class="d-inline-block">건강을 지키는 매일의 밥상이 고민이라면 손맛 반찬가게에게 맡기세요! 영양 식재료에 5無첨가 소스로 만든 맛있는 건강식 반찬!
+    </span>
+    <br>
+    <br>
+    <span class="d-inline-block">
+    위치: 서울 강남구 남부순환로363길 12-53 (우)06269
+    <br>
+    연락처: 02-3462-1007
+    </span>
+</span>
+</div>
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1611894908484",
+		"key" : "246vs",
+		"mapWidth" : "640",
+		"mapHeight" : "360"
+	}).render();
+</script>
+<br>
+
+</div>
+{% endblock %}
