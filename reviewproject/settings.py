@@ -39,7 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'common.apps.CommonConfig',
     'store',
-    'cart'
     ]
 
 MIDDLEWARE = [
@@ -119,9 +118,10 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
+
 STATIC_URL = '/static/'
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+STATICFILES_DIRS=(os.path.join(BASE_DIR,"static"),
+        )
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR),"web_staticfiles")
+LOGIN_REDIRECT_URL='/'
+LOGOUT_REDIRECT_URL='/'
